@@ -3,137 +3,178 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="style.css" />
     <title>My first app</title>
   </head>
   <body>
     <header>
-      <h1>My navbar</h1>
-      <section>
-        <nav>
-          <ul>
+      <nav class="navbar">
+        <h1>My navbar</h1>
+          <ul class="list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-        </nav>
-      </section>
+        
+      </nav>
     </header>
-    <aside>
-      <h2>Mysidebar</h2>
-      <p>My sidebar</p>
-    </aside>
-    <main>
-      <h2>forum</h2>
-      <fieldset>
-        <legend><b>create your invoice</b></legend>
-        <img src="src\logo.png" alt="logo" width="100" height="100" />
+    
+      <aside class="sidebar">
+        <h2>Mysidebar</h2>
+        <ul class="sidebar-content">
+          <li class="list">
+            <a href="#" class="nav-link"> <span class="link">Dashboard</span></a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link"> <span class="link">menu</span></a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link"> <span class="link">deconexion</span></a>
+          </li>
+        </ul>
+      </aside>
+      <section class="wrap">
+        <h2>forum</h2>
 
         <form action="index.html" method="post">
-          <label for="name">name of client</label>
-          <br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="name of client"
-            width="500"
-            required
-          />
-          <br />
+          <fieldset>
+            <legend><b>create your invoice</b></legend>
+            <img src="src\logo.png" alt="logo" width="100" height="100" />
 
-          <label for="email">email of client</label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email"
-            required
-          />
-          <br />
-          <label for="phone">phone </label>
-          <br />
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="phone"
-            required
-          />
-          <br />
-          <label for="address">address</label>
-          <br />
-          <input
-            type="text"
-            name="address"
-            id="address"
-            placeholder="address"
-            required
-          />
-          <br />
-          <label for="date">date</label>
-          <br />
-          <input
-            type="date"
-            name="date"
-            id="date"
-            placeholder="date"
-            required
-          />
-          <br />
-          <label for="message">list products</label>
-          <br />
-          <textarea
-            name="list products"
-            id="list products"
-            placeholder="list products"
-          ></textarea>
-          <br /><br />
-          <input type="submit" value="add" />
-          <button type="reset">reset</button>
+            <label for="name">name of client</label>
+
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="name of client"
+              width="500"
+              required
+            />
+
+            <label for="email">email of client</label>
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email"
+              required
+            />
+
+            <label for="phone">phone </label>
+
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="phone"
+              required
+            />
+
+            <label for="address">address</label>
+
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="address"
+              required
+            />
+
+            <label for="date">date</label>
+
+            <input
+              type="date"
+              name="date"
+              id="date"
+              placeholder="date"
+              required
+            />
+
+            <label for="message">list products</label>
+
+            <textarea
+              name="list products"
+              id="list products"
+              placeholder="list products"
+            ></textarea>
+            <div class="buttons">
+              <input class="button" type="submit" value="add" />
+              <button class="button" type="reset">reset</button>
+            </div>
+          </fieldset>
         </form>
-      </fieldset>
-    </main>
-    <hr />
-    <h2>tab of users</h2>
-    <section>
-      <table border="1" width="400px">
-        <thead>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>40</td>
-          </tr>
-          <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-            <td>35</td>
-          </tr>
-          <tr>
-            <td>John</td>
-            <td>Smith</td>
-            <td>30</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">3 people</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
+
+        <h2>tab of users</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Smith</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">3 people</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h2>tab of users</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>John</td>
+              <td>Smith</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">3 people</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
 
     <footer>
-      <hr />
-      <p>My footer@keyrus.com &#128517;</p>
+      My footer@keyrus.com &#128517;
     </footer>
   </body>
 </html>
